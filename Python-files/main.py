@@ -40,7 +40,7 @@ if st.button("Summarize"):
     else:
         with st.spinner("Summarizing..."):
             # Adjust max_length and min_length as needed
-            summary_output = summarizer(text_input, max_length=150, min_length=30, do_sample=False)
+            summary_output = summarizer(text_input, max_length=200, min_length=30, do_sample=False)
             summarized_text = summary_output[0]['summary_text']
         st.subheader("Summary")
         st.write(summarized_text)
